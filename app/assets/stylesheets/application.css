@@ -9,5 +9,10 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require "bootstrap.css"
+ *= require "magnific-popup.css"
+ *= require "flexslider.css"
+ *= require "style.css"
+ *= require "responsive.css"
  *= require_tree .
  */

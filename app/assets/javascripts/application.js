@@ -12,4 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
+
+//= require jquery.min
+//= require jquery.migrate
+//= require jquery.magnific-popup.min
+//= require bootstrap
+//= require jquery.imagesloaded.min
+//= require jquery.isotope.min
+//= require retina-1.1.0.min
+//= require jquery.nicescroll.min
+//= require script
 //= require_tree .
