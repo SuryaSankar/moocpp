@@ -262,7 +262,7 @@ $(document).ready(function($) {
 	/* ---------------------------------------------------------------------- */
 	/*	Contact Form
 	/* ---------------------------------------------------------------------- */
-
+/*
 	var submitContact = $('#submit_contact'),
 		message = $('#msg');
 
@@ -273,7 +273,7 @@ $(document).ready(function($) {
 		
 		$.ajax({
 			type: "POST",
-			url: 'contact.php',
+			url: '/courses',
 			dataType: 'json',
 			cache: false,
 			data: $('#contact-form').serialize(),
@@ -288,5 +288,6 @@ $(document).ready(function($) {
 			}
 		});
 	});
+*/
 
 });

@@ -24,8 +24,18 @@ class CoursesController < ApplicationController
   # POST /courses
   # POST /courses.json
   def create
-    @course = Course.new(course_params)
-
+    
+     uploaded_io = params[:videofilepath]
+  f=File.open(Rails.root.join('public', 'uploads', uploaded_io.original_filename), 'wb') do |file|
+    file.write(uploaded_io.read)
+    
+  end
+    @course=Course.new
+    @course.videofilepath= params[:videofilepath].original_filename  
+    @course.name=params[:name]
+    @course.university=params[:university]
+    @course.subject=params[:subject]
+    @course.topic=params[:topic]
     respond_to do |format|
       if @course.save
         format.html { redirect_to @course, notice: 'Course was successfully created.' }

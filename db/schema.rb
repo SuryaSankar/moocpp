@@ -11,9 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140315113521) do
+ActiveRecord::Schema.define(version: 20140316082041) do
 
   create_table "courses", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "videofilepath"
+    t.string   "subject"
+    t.string   "name"
+    t.string   "topic"
+    t.text     "comment"
+    t.string   "university"
+  end
+
+  create_table "subjects", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

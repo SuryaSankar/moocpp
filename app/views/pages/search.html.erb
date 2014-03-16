@@ -1,0 +1,167 @@
+<!-- Container -->
+	<div id="container">
+		<!-- Header
+		    ================================================== -->
+		<header>
+			<div class="logo-box">
+				<a class="logo" href="index.html"><%= image_tag "logo.png" %></a>
+			</div>
+			
+			<a class="elemadded responsive-link" href="#">Menu</a>
+
+			<div class="menu-box">
+				<ul class="menu">
+					<li><a href="/"><span>Home</span></a></li>
+					<li><a class="active" href="#"><span>Search</span></a></li>
+					
+					<li><a href="/courses/new"><span>Upload A Video</span></a></li>
+				</ul>				
+			</div>
+
+			
+			<div class="social-box">
+				<ul class="social-icons">
+					<li><a href="#" class="facebook" ><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#" class="twitter" ><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#" class="google" ><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#" class="linkedin" ><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#" class="pinterest" ><i class="fa fa-pinterest"></i></a></li>
+					<li><a href="#" class="youtube" ><i class="fa fa-youtube"></i></a></li>
+					<li><a href="#" class="github" ><i class="fa fa-github"></i></a></li>
+				</ul>
+				<p class="copyright">&#169; 2014 Sayan Goswami, All Rights Reserved</p>
+			</div>
+		</header>
+		<!-- End Header -->
+
+		<!-- content 
+			================================================== -->
+		<div id="content">
+			<div class="inner-content">
+				<div class="about-page">
+
+					<div class="about-box">
+						<div class="about-content">
+							<div class="about-section">
+								<%= image_tag "about.jpg"%>
+								<h1>Search For a Video</h1>
+															
+							</div>
+							<script type="text/javascript">
+
+// Google Internal Site Search script- By JavaScriptKit.com (http://www.javascriptkit.com)
+// For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
+// This notice must stay intact for use
+
+//Enter domain of site to search.
+var domainroot="www.javascriptkit.com"
+
+function Gsitesearch(curobj){
+curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+}
+
+</script>
+
+
+<form action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
+
+<p>GO HUNTING !!!<br />
+<input name="q" type="hidden" />
+<input name="qfront" type="text" style="width: 180px" /> <input type="submit" value="Search" /></p>
+
+</form>
+
+
+							<br/><br/><br/><br/><br/><div class="about-section last-section">
+								<h1>Meet The Team of MOOC++</h1>
+								<div class="team-members">
+									<div class="row">
+										<div class="col-md-4">
+											<div class="team-post">
+												<%= image_tag "team1.jpg"%>
+												<div class="team-hover">
+													<div class="team-data">
+														<h3>Sayan Goswami</h3>
+														<span>Complete Package</span>
+													</div>
+												</div>
+											</div>											
+										</div>
+										<div class="col-md-4">
+											<div class="team-post">
+												<%= image_tag "team2.jpg"%>
+												<div class="team-hover">
+													<div class="team-data">
+														<h3>Surya</h3>
+														<span>Back End Expert</span>
+													</div>
+												</div>
+											</div>											
+										</div>
+										<div class="col-md-4">
+											<div class="team-post">
+												<%= image_tag "team3.jpg"%>
+												<div class="team-hover">
+													<div class="team-data">
+														<h3>Shyam</h3>
+														<span>Front End Guru</span>
+													</div>
+												</div>
+											</div>											
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4">
+											<div class="team-post">
+												<%= image_tag "team4.jpg"%>
+												<div class="team-hover">
+													<div class="team-data">
+														<h3>Ravindra</h3>
+														<span>Market Analyst</span>
+													</div>
+												</div>
+											</div>											
+										</div>
+									</div>
+									
+								</div>							
+							</div>
+						</div>
+						<div class="sidebar">
+							
+
+							<div class="testimonial">
+								<h1>User Feedback</h1>
+								<ul>
+									<li>
+										<div class="client-test">
+											<%= image_tag "avatar2.jpg"%>
+											<h3>Anshu Kumar</h3>
+										</div>
+										<p>Finally somewhere to search the topics needed in a more efficient mannner....</p>
+									</li>
+									<li>
+										<div class="client-test">
+											<%= image_tag "avatar1.jpg"%>
+											<h3>Raj Vimal Chopra - Developer</h3>
+										</div>
+										<p>A place where I can show what I am really capable of and share my knowledge on a broader basis.
+										I can shoot a video in my free time and then upload it here...earning points and building up my resume in a way like never before.</p>
+									</li>
+								</ul>
+							</div>
+
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End content -->
+
+	</div>
+	<!-- End Container -->
+
+	<div class="preloader">
+		<img alt="" src="images/preloader.gif">
+	</div>

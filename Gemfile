@@ -13,6 +13,7 @@ gem 'simple_form', '>= 3.0.0.rc'
 gem 'thin'
 gem 'bcrypt-ruby', '~> 3.0.0', :require => 'bcrypt' 
 gem 'redcarpet'
+gem 'flowplayer'
  
 group :development do
   gem 'sqlite3'

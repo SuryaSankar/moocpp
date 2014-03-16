@@ -12,8 +12,8 @@
 
 			<div class="menu-box">
 				<ul class="menu">
-					<li><a href="index.html"><span>Home</span></a></li>
-					<li><a href="search.html"><span>Search</span></a></li>
+					<li><a href="/"><span>Home</span></a></li>
+					<li><a href="/search"><span>Search</span></a></li>
 					<li><a class="active" href="upload.html"><span>Upload A Video</span></a></li>
 				</ul>				
 			</div>
@@ -48,26 +48,32 @@
 							<h1>Upload A Video</h1>
 							<p>You can Upload A Video Here...</p>
 						</div>
-						<form id="contact-form" method="POST" action="/courses" enctype="multipart/form-data">
-							<h1>Enter Video Details</h1>
+            <%= form_tag "/courses", method: "POST", multipart: true, id: "contact-form"  do %>
+
+							<h1>Enter Video Detail</h1>
 							<div class="text-fields">
 								<div class="float-input">
-									<input name="name" id="name" type="text" placeholder="Name Of The University">
+									<input name="name" id="name" type="text" placeholder="Video Title">
 									<span><i class="fa fa-user"></i></span>
 								</div>
 								<div class="float-input">
-									<input name="mail" id="mail" type="text" placeholder="Subject">
+									<input name="university" id="university" type="text" placeholder="Name Of The University">
+									<span><i class="fa fa-user"></i></span>
+								</div>
+								<div class="float-input">
+									<input name="subject" id="subject" type="text" placeholder="Subject">
 									<span><i class="fa fa-envelope-o"></i></span>
 								</div>
 								<div class="float-input">
-									<input name="website" id="website" type="text" placeholder="Topic">
+									<input name="topic" id="topic" type="text" placeholder="Topic">
 									<span><i class="fa fa-link"></i></span>
 								</div>
 							</div>
 
 							<div class="submit-area">
 								<textarea name="comment" id="comment" placeholder="Description"></textarea>
-								<input class= "float-video" type="file" accept="video/mp4, video/webm, video/flv">
+                <%= file_field_tag 'videofilepath', class:"float-video" %>
+								<!-- <input class= "float-video" type="file" id="video" accept="video/mp4, video/webm, video/flv"> -->
 								<input type="submit" id="submit_contact" class="main-button" value="Upload Now">
 								<div id="msg" class="message"></div>
 							</div>
@@ -76,7 +82,8 @@
 								
 								
 							</div>
-						</form>
+						
+            <% end %>
 					</div>
 				</div>
 			</div>
